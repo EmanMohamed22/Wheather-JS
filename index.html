@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sheet.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container pt-4">
+            <img src="logo@2x.png" class="img-icon" alt="">
+          <a class="navbar-brand fw-bold ps-1" href="#">Weather</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-info border border-2 border-info rounded-pill" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Camera</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              
+             
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+      <div class="back ">
+        <div class="container ">
+            <form class="position-relative  ">
+                <input type="text" placeholder="Find your Location" id="search">
+                <input type="button" value="Find" id="btn">
+            </form >
+        </div>
+        <div class="container my-3">
+            <div class="row ">
+                <div class="col-md-4 rad ">
+                    <div class="weather bg-dark text-white ">
+                        <div class="header d-flex justify-content-between p-2 today">
+                            <h4 class="day">friday</h4>
+                            <h4 class="month">February</h4>
+                        </div>
+                        <div class="wBody p-2 fs-1">
+                            <div id="location1">Cairo</div>
+                            <div class="degree d-flex justify-content-between">
+                                <div class="number"><span>10</span>°C</div>
+                                <div class="weathIcon ">
+
+                                </div>
+                            </div>
+                            <div class="sun fs-4 text-info">
+                                Clear
+                            </div>
+                           
+                        </div>
+                        <div class="ps-2 mt-3">
+                            <span  class="mx-3"><img src="icon-umberella.png" alt="">"20%"</span>
+                            <span  class="mx-3"><img src="icon-wind.png" alt="">"18 km/h"</span>
+                            <span  class="mx-3"><img src="icon-compass.png" alt="">"East"</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="weather bg-dark text-white">
+                        <div class="header p-2 tomorrow text-center">
+                            <h4 class="day2"></h4>   
+                        </div>
+                        <div class="wBody p-2 text-center">
+                            <div class="degree1">
+                                <div class="weathIcon2">
+                                </div>
+                                <div class="number1 fs-1"><span></span>°C</div>
+                                <div class="number2"><span></span>°C</div>
+                               
+                            </div>
+                            <div class="sun2 fs-4">
+                                Clear
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="weather bg-dark text-white">
+                        <div class="header  p-2 after-tomorrow text-center">
+                            <h4 class="day3">friday</h4>
+                            
+                        </div>
+                        <div class="wBody p-2 text-center">
+                            <div class="degree">
+                                <div class="weathIcon3">
+
+                                </div>
+                                <div class="number3 fs-1"><span>10</span>°C</div>
+                                <div class="number4"><span>10</span>°C</div>
+                    
+                            </div>
+                            <div class="sun3 fs-3">
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+      <div class="footer py-5 ">
+        <div class="container ">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <form class="position-relative  ">
+                        <input type="text" placeholder="Enter your email" id="subscribe">
+                        <input type="button" value="Find" class="position-absolute bg-info ">
+                    </form >
+                </div>
+                <div class="col-md-4 ">
+                    <div class="social ">
+                        <div class=" d-flex  ">
+                            <div class=" my-1 icon border border-1 border-info mx-1 rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="fa-brands fa-facebook fa-1x text-info"></i>
+                            </div>
+                            <div class=" my-1 icon border border-1 border-info mx-1 rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="fa-brands fa-twitter fa-1x text-info"></i>
+                            </div>
+                            <div
+                                class=" my-1 icon border border-1 border-info mx-1 rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="fa-brands fa-instagram fa-1x text-info"></i>
+                            </div>
+
+                            <div
+                                class=" my-1 icon border border-1 mx-1 border-info rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="fa-brands fa-tiktok fa-1x text-info"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-white fs-6 pt-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+       
+      </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
